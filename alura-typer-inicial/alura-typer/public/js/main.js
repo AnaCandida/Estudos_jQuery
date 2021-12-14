@@ -2,6 +2,7 @@ var inicialTime =  $('#tempo_digitacao').text()
 var typeField = $(".textInput");
 
 
+
 $(document).ready(function(){
     initTextForCopySize();
     initCounters();
@@ -61,7 +62,7 @@ function restart(){
         $("#caracterCounter").text("0");
         $('#tempo_digitacao').text(inicialTime);
         initTimer();
-        initCounters();
+        // initCounters();
     
     
 }
