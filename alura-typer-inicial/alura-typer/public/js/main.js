@@ -4,7 +4,6 @@ let hinnerWordNumber = $("#tamanho_frase");
 
 hinnerWordNumber.text(wordNumber);
 
-
 var  campo = $(".textInput");
 campo.on("input", function(){
    var conteudo  = campo.val();
@@ -32,4 +31,16 @@ campo.one("focus", function(){
         
      
     }, 1000);
+})
+
+
+var tempoInicial =  $('#tempo_digitacao').text()
+$('#restart').click(function(){
+    campo.attr("disabled", false);
+    campo.val("");
+    $("#wordCounter").text("0");
+    $("#caracterCounter").text("0");
+    $('#tempo_digitacao').text()
+    $('#tempo_digitacao').text(tempoInicial)
+
 })
