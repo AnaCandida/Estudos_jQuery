@@ -15,3 +15,21 @@ campo.on("input", function(){
 
 
 })
+
+var tempoRestante =  $('#tempo_digitacao').text()
+
+campo.one("focus", function(){
+    
+  var cronometroID =  setInterval(function(){
+        tempoRestante--;
+        $('#tempo_digitacao').text(tempoRestante)
+       
+       if (tempoRestante <1){
+            campo.attr("disabled",true);
+            clearInterval(cronometroID);
+        }
+
+        
+     
+    }, 1000);
+})
