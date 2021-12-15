@@ -1,5 +1,5 @@
 var inicialTime =  $('#tempo_digitacao').text()
-var typeField = $(".textInput");
+var typeField = $(".fieldInput");
 
 
 
@@ -31,6 +31,26 @@ function initCounters(){
     })
     
 }
+
+
+typeField.on('input',function(){
+    let textForCopy = $(".textForCopy").text();
+
+    var textTyped  = typeField.val()
+
+   var comparavel = textForCopy.substr(0,textTyped.length);
+   console.log("digitado = ", textTyped)
+
+   console.log("comparado = ", comparavel)
+    
+   if(textTyped == comparavel){
+       console.log("correto")
+   }else{
+       console.log("errado")
+   }
+   
+  
+})
 
 function initTimer(){
 

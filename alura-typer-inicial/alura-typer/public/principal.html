@@ -6,21 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alura Typer</title>
 
-    <link
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
-    />
+    /> -->
   </head>
   <body>
-    <main class="container-fluid">
-      <section class="title-container">
+    <main class="container">
+      <section class="title-container center">
         <h1>Alura Typer</h1>
       </section>
 
-      <section class="infos-container">
-        <p class="textForCopy"></p>
+      <section class="infos-container center">
+        <p class="textForCopy">Ana Cândida Pereira de Quadros</p>
 
         <ul class="informacoes">
           <li> <span id="tamanho_frase"> 0 </span> palavras</li>
@@ -28,8 +31,8 @@
         </ul>
       </section>
 
-      <section class="input-container">
-          <textarea class="textInput" name="" id="" cols="60" rows="10"></textarea>
+      <section class="input-container center">
+          <textarea class="fieldInput" name="" id="" cols="60" rows="10"></textarea>
 
         <ul>
             <li> <spam id="caracterCounter">0</spam> caracteres</li>
@@ -39,7 +42,7 @@
       </section>
 
 
-      <button id="restart"> Restart </button>
+      <button class="right" id="restart"> Restart </button>
     </main>
 
     <script src="js/jquery.js"></script>
